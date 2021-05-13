@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.subimitFcompra{
+    display: flex;
+    justify-content: end;
+    background-color:  #F6AE2D;
+    border: none;
+    box-shadow: black;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: agency fb;
+    color: #13315c;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+#fcompra{
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+.subimitFcompra:hover{
+    color: white;
+}

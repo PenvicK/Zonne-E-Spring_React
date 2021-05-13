@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.credinput{
+    border-radius: 3px;
+    font-size: 30px;
+    font-family: agency fb;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 10px;
+}
+.credinput:focus{
+    outline: none;
+}

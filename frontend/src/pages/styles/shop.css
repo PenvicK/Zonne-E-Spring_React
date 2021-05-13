@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+
+.boxShop{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+    
+}
+.sectioncameraShop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #13315c;
+    font-size: 13px;
+    font-weight: bold;
+    width:  300px;
+    padding-bottom: 0px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: white;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-color:  #F6AE2D;
+}
+.cameraShop{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    color: black;
+}
+.quantShop{
+    display: flex;
+    justify-content: center;
+
+}
+.menosShop{
+    background-color: #F6AE2D;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.menosShop:focus{
+    outline: none;
+}
+.menosShop:hover{
+    background-color: #ff8800;
+    color: white;
+}
+.numShop{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+    display: flex;
+    border-width: 1px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-color: black;
+    border-style: solid;
+}
+.maisShop{
+    background-color: #F6AE2D;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.maisShop:focus {
+    outline: none;
+}
+.maisShop:hover{
+    background-color:  #ff8800;
+    color: white;
+}
+.formShop{
+    padding-top: 45px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width:  300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-color:  #F6AE2D;
+    background-color: white;
+}
+.caixasShop{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    margin-top: 30px;
+}
+.cancelShop{
+    margin-top: 10px;
+}
+.form2Shop{
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 45px;
+    width:  400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-right-width: 4px;
+    border-right-style: solid;
+    border-color:  #F6AE2D;
+}
+.finalShop{
+    margin-top:120px;
+}
+.alterarShop{
+    display: flex;
+    justify-content: flex-start;
+    background-color:  #F6AE2D;
+    border: none;
+    box-shadow: black;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: agency fb;
+    color: #13315c;
+}
+.cancelarShop{
+    display: flex;
+    justify-content: flex-start;
+    background-color:  #F6AE2D;
+    border: none;
+    box-shadow: black;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 3px;
+    font-size: 20px;
+    font-family: agency fb;
+    color: #13315c;
+}
+.alterarShop:hover{
+    color: white;
+}
+.cancelarShop:hover{
+    color: white;
+}
+.finalizarShop{
+    display: flex;
+    justify-content: end;
+    background-color:  #F6AE2D;
+    border: none;
+    box-shadow: black;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: agency fb;
+    color: #13315c;
+}
+.txtShop{
+    font-size: 20px;
+    font-family: agency fb;
+    font-weight: bold;
+    color: #13315c;
+}

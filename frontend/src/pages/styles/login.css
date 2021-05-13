@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+titulos{
+    color: white;
+    font-family: agency fb;
+    font-size: 120px;
+} 
+botao{
+    color: white;
+    font-family: agency fb;
+    font-size: 20px;   
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 250px;
+    
+}
+.container-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.credenciais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    list-style: none;
+    
+}
+.checkcaixa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sen{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    text-decoration: none;
+}
+.container-forgot{
+    display: flex;
+    justify-content:flex-start;
+    margin: 2px;
+    text-decoration: none;
+}
+.cbox{
+    display: flex;
+    flex-direction: column;
+    margin-right: 83px;
+
+}
+
+

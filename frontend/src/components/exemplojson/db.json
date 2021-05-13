@@ -1,0 +1,91 @@
+{
+  "DadosCadastrais": [
+    {
+      "id": "1",
+      "nome": "Fernando",
+      "cpf": "000.000.000-00",
+      "telefone": "(00)0 0000-0000",
+      "data de nascimento": {
+        "dia": "12",
+        "mes": "03",
+        "ano": "2000"
+      },
+      "email": "xxxxxxx@xxxx.com",
+      "senha": "********",
+      "endereço": {
+        "cep": "00000-000",
+        "estado": "Paraná",
+        "cidade": "Umuarama",
+        "rua": "Av.Brasil",
+        "numero": "000",
+        "complemento": "casa"
+      }
+    },
+    {
+      "id": "2",
+      "nome": "Alberto",
+      "cpf": "000.000.000-00",
+      "telefone": "(00)0 0000-0000",
+      "data de nascimento": {
+        "dia": "27",
+        "mes": "12",
+        "ano": "2001"
+      },
+      "email": "xxxxxxx@xxxx.com",
+      "senha": "********",
+      "endereço": {
+        "cep": "00000-000",
+        "estado": "Paraná",
+        "cidade": "Cascavel",
+        "rua": "Av.Brasil",
+        "numero": "000",
+        "complemento": "Apt"
+      }
+    },
+    {
+      "id": "3",
+      "nome": "Priscila",
+      "cpf": "000.000.000-00",
+      "telefone": "(00)0 0000-0000",
+      "data de nascimento": {
+        "dia": "04",
+        "mes": "11",
+        "ano": "1996"
+      },
+      "email": "xxxxxxx@xxxx.com",
+      "senha": "********",
+      "endereço": {
+        "cep": "00000-000",
+        "estado": "Paraná",
+        "cidade": "Foz Iguaçu",
+        "rua": "Av.Brasil",
+        "numero": "000",
+        "complemento": "casa"
+      }
+    },
+    {
+      "id": "4",
+      "nome": "Alice",
+      "cpf": "000.000.000-00",
+      "telefone": "(00)0 0000-0000",
+      "data de nascimento": {
+        "dia": "04",
+        "mes": "11",
+        "ano": "1996"
+      },
+      "email": "xxxxxxx@xxxx.com",
+      "senha": "********",
+      "endereço": {
+        "cep": "00000-000",
+        "estado": "Paraná",
+        "cidade": "Foz Iguaçu",
+        "rua": "Av.Brasil",
+        "numero": "000",
+        "complemento": "casa"
+      }
+    },
+    {
+      "id": "6CKbB6Q"
+    }
+  ]
+}

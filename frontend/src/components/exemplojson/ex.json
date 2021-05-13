@@ -1,0 +1,32 @@
+{
+    "dashboard": {
+     "Top5Quantity":{
+       "John McGiver":19280,
+       "Salvador Dalí":15775,
+       "Dulce Pontes":15113,
+       "Toma Ikuta":14981,
+       "Celine Dion":13476
+     },
+     "YearlyPerformancePaís":{
+       "Europe":40.29,
+       "North America":33.70,
+       "Asia":26.01
+     },
+     "YearlyPerformanceQuantity":{
+       "2014":29.051,
+       "2015":196.155,
+       "2016":199.030,
+       "2017":331.570,
+       "2018":272.653,
+       "2019":167.456   
+     },
+     "Top5Quantity2":{
+       "Audi R8 GT":23.839,
+       "Aston Martin V12 Vanquish":23.291,
+       "Bentley Mark II Continental":17.728,
+       "Porsche 911 GT1":13.889,
+       "Lotus Formula 3":13.756
+   
+     }
+    }
+}

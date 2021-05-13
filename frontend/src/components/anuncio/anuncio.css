@@ -1,0 +1,48 @@
+.anunOn{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color:  #f6b02da6;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 7px;
+    padding-left: 285px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.anunOff{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color:  #f6b02da6;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 5px;
+    padding-left: 6px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.anunOff:hover{
+    background-color:  #F6AE2D;
+}
+.anunOn:hover{
+    background-color:  #F6AE2D;
+}
+#anun{
+    text-decoration: none;
+}
+.imagenAnunOn{
+    transform: translateX(0%);
+    transition: all 0.2s;
+}
+.imagenAnunOff{
+    transform: translateX(-100%);
+    transition: all 0.2s;
+}
+.container-allAnuncio{
+    display: block;
+    position: absolute;
+    top: 600px;
+}

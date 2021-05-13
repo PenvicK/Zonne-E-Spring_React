@@ -1,0 +1,89 @@
+.cadastro{
+    background-color:  #F6AE2D;
+    border: none;
+    box-shadow: black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 55px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.linkCadastro{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 53px;
+    font-family: agency fb;
+    color: #13315c;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.linkCadastro:hover{
+    color: white;
+    transition: 0.2s;
+    padding: 2px;
+}
+.linkCadastro span{
+    position: absolute;
+    display: block;
+}
+.linkCadastro span:nth-child(1)
+{
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg,transparent, white);
+ 
+}
+.linkCadastro:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+.linkCadastro span:nth-child(3)
+{
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg,transparent,white);
+ 
+}
+.linkCadastro:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.linkCadastro span:nth-child(2)
+{
+    top:-100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,white);
+ 
+}
+.linkCadastro:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.linkCadastro span:nth-child(4)
+{
+    bottom:-100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent, white);
+ 
+}
+.linkCadastro:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}

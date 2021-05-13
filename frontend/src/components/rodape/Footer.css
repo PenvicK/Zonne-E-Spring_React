@@ -1,0 +1,64 @@
+.caixa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #F6AE2D;
+
+}
+.textoFooter{
+    font-size: 15px;
+    font-weight: 495;
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+#textoEmail{
+    margin-left: 15px;
+}
+.feet{
+    display: flex;
+    justify-content: space-between;
+    width: 1366px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.zonne{
+    margin-left: 20px;
+
+}
+.redes{
+    margin-right: 20px;
+    
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.copy{
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+#copyRight{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color:  #13315c;
+}
+.linkFooter{
+    font-family: 'Secular One', sans-serif;
+    font-size: 15px;
+    font-weight: 495;
+    text-decoration: none;
+    color:white;
+}
