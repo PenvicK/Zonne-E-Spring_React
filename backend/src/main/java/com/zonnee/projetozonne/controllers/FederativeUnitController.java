@@ -1,12 +1,11 @@
 package com.zonnee.projetozonne.controllers;
 
 import com.zonnee.projetozonne.dto.FederativeUnitDTO;
+import com.zonnee.projetozonne.entities.FederativeUnit;
 import com.zonnee.projetozonne.services.FederativeUnitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,4 +21,9 @@ public class FederativeUnitController {
         List<FederativeUnitDTO> list = service.findAll();
         return ResponseEntity.ok(list);
     }
+
+//    @PostMapping
+//    public FederativeUnitDTO saveFederativeUnit(@RequestBody FederativeUnitDTO federativeUnitDTO){
+//        return service.saveFederativeUnit();
+//    }
 }
