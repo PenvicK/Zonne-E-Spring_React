@@ -1,8 +1,16 @@
 package com.zonnee.projetozonne.dto;
 
 import com.zonnee.projetozonne.entities.FederativeUnit;
-import java.io.Serializable;
+import lombok.*;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class FederativeUnitDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -10,42 +18,13 @@ public class FederativeUnitDTO implements Serializable {
     private String name;
     private String prefix;
 
-    public FederativeUnitDTO(){
+    private List<DealershipDTO> dealershipDTOS = new ArrayList<>();
 
-    }
-
-    public FederativeUnitDTO(Long idFederativeUnit, String name, String prefix) {
-        this.idFederativeUnit = idFederativeUnit;
-        this.name = name;
-        this.prefix = prefix;
-    }
     public FederativeUnitDTO(FederativeUnit entity) {
         idFederativeUnit = entity.getIdFederativeUnit();
         name = entity.getName();
         prefix = entity.getPrefix();
+        dealershipDTOS = entity.getDealerships().stream().map(dealership -> new DealershipDTO(dealership)).collect(Collectors.toList());
     }
 
-    public Long getIdFederativeUnit() {
-        return idFederativeUnit;
-    }
-
-    public void setIdFederativeUnit(Long idFederativeUnit) {
-        this.idFederativeUnit = idFederativeUnit;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPrefix() {
-        return prefix;
-    }
-
-    public void setPrefix(String prefix) {
-        this.prefix = prefix;
-    }
 }
