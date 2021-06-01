@@ -1,8 +1,6 @@
 package com.zonnee.projetozonne.dto;
 
-
 import com.zonnee.projetozonne.entities.FederativeUnit;
-
 import java.io.Serializable;
 
 public class FederativeUnitDTO implements Serializable {

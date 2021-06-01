@@ -1,40 +1,40 @@
 package com.zonnee.projetozonne.controllers;
 
+import com.zonnee.projetozonne.dto.DealershipDTO;
 import com.zonnee.projetozonne.dto.FederativeUnitDTO;
+import com.zonnee.projetozonne.entities.Dealership;
 import com.zonnee.projetozonne.entities.FederativeUnit;
 import com.zonnee.projetozonne.repositories.FederativeUnitRepository;
+import com.zonnee.projetozonne.services.DealershipService;
 import com.zonnee.projetozonne.services.FederativeUnitService;
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import javax.websocket.server.PathParam;
 import java.net.URI;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/federative-units")
-public class FederativeUnitController {
+@RequestMapping(value = "/dealerships")
+public class DealershipController {
 
     @Autowired
-    private FederativeUnitService service;
-    private FederativeUnitRepository repository;
+    private DealershipService service;
 
     @GetMapping
-    public ResponseEntity<List<FederativeUnitDTO>> findAll(){
-        List<FederativeUnitDTO> list = service.findAll();
+    public ResponseEntity<List<DealershipDTO>> findAll(){
+        List<DealershipDTO> list = service.findAll();
         return ResponseEntity.ok(list);
     }
 
     @PostMapping
-    public ResponseEntity<FederativeUnitDTO> insert(@RequestBody FederativeUnitDTO entity) {
+    public ResponseEntity<DealershipDTO> insert(@RequestBody DealershipDTO entity) {
         try {
-            FederativeUnitDTO obj = service.insertFederativeUnit(entity);
+            DealershipDTO obj = service.insertDealership(entity);
             URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-                    .buildAndExpand(obj.getIdFederativeUnit()).toUri();
+                    .buildAndExpand(obj.getIdDealership()).toUri();
             return ResponseEntity.created(uri).body(obj);
         } catch (ServiceException e) {
             return ResponseEntity.unprocessableEntity().build();
@@ -42,21 +42,20 @@ public class FederativeUnitController {
     }
 
     @GetMapping(path = "/{id}")
-    public ResponseEntity<FederativeUnit> findById(@PathVariable Long id) {
+    public ResponseEntity<Dealership> findById(@PathVariable Long id) {
         return ResponseEntity.ok(service.findById(id));
     }
 
     @DeleteMapping(path = "/{id}")
     public ResponseEntity<String> deleteById(@PathVariable Long id){
-        service.deleteFederativeUnitById(id);
-        return ResponseEntity.ok("Unidade Federativa " + id + " deletado!");
+        service.deleteDealershipById(id);
+        return ResponseEntity.ok("Conssecionaria " + id + " deletado!");
     }
 
     @PutMapping(path = "/{id}")
-    public ResponseEntity<FederativeUnit> editFederativeUnit(@PathVariable Long id, @RequestBody FederativeUnit update){
-        return ResponseEntity.ok(service.editFederativeUnit(id, update));
+    public ResponseEntity<Dealership> edit(@PathVariable Long id, @RequestBody Dealership update){
+        return ResponseEntity.ok(service.editDealership(id, update));
     }
-
 }
 
 
