@@ -53,7 +53,7 @@ public class FederativeUnitController {
     }
 
     @PutMapping(path = "/{id}")
-    public ResponseEntity<FederativeUnit> editFederativeUnit(@PathVariable Long id, @RequestBody FederativeUnit update){
+    public ResponseEntity<FederativeUnitDTO> editFederativeUnit(@PathVariable Long id, @RequestBody FederativeUnit update){
         return ResponseEntity.ok(service.editFederativeUnit(id, update));
     }
 

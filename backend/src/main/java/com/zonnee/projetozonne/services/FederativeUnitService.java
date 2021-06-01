@@ -43,7 +43,8 @@ public class FederativeUnitService {
     public void deleteFederativeUnitById(Long id){
         repository.delete(findById(id));
     }
-    public FederativeUnit editFederativeUnit(Long id, FederativeUnit update){
+    public FederativeUnitDTO editFederativeUnit(Long id, FederativeUnit update){
+        FederativeUnitDTO dto = new FederativeUnitDTO();
         FederativeUnit federativeUnit = findById(id);
         FederativeUnit checkUpdate = repository.findByName(update.getName());
         if (checkUpdate != null){
@@ -51,7 +52,13 @@ public class FederativeUnitService {
         }
         federativeUnit.setName(update.getName());
         federativeUnit.setPrefix(update.getPrefix());
+
+        dto.setIdFederativeUnit(id);
+        dto.setName(update.getName());
+        dto.setPrefix(update.getPrefix());
+
         repository.save(federativeUnit);
-        return federativeUnit;
+
+        return dto;
     }
 }

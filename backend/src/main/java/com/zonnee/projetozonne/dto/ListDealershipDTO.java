@@ -8,6 +8,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -18,9 +20,11 @@ public class ListDealershipDTO implements Serializable {
     private Long idDealership;
     private String name;
 
+    private ListFederativeUnitDTO federativeUnitDTO;
 
     public ListDealershipDTO(Dealership entity) {
         idDealership = entity.getIdDealership();
         name = entity.getName();
+        federativeUnitDTO = new ListFederativeUnitDTO(entity.getIdFederativeUnit());
     }
 }

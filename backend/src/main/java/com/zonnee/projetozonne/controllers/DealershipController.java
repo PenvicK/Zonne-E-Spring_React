@@ -2,6 +2,7 @@ package com.zonnee.projetozonne.controllers;
 
 import com.zonnee.projetozonne.dto.DealershipDTO;
 import com.zonnee.projetozonne.dto.FederativeUnitDTO;
+import com.zonnee.projetozonne.dto.ListDealershipDTO;
 import com.zonnee.projetozonne.entities.Dealership;
 import com.zonnee.projetozonne.entities.FederativeUnit;
 import com.zonnee.projetozonne.repositories.FederativeUnitRepository;
@@ -25,8 +26,8 @@ public class DealershipController {
 
     // GET ALL
     @GetMapping
-    public ResponseEntity<List<DealershipDTO>> findAll(){
-        List<DealershipDTO> list = service.findAll();
+    public ResponseEntity<List<ListDealershipDTO>> findAll(){
+        List<ListDealershipDTO> list = service.findAll();
         return ResponseEntity.ok(list);
     }
 

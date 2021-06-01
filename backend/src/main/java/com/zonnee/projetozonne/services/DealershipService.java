@@ -1,6 +1,7 @@
 package com.zonnee.projetozonne.services;
 
 import com.zonnee.projetozonne.dto.DealershipDTO;
+import com.zonnee.projetozonne.dto.ListDealershipDTO;
 import com.zonnee.projetozonne.entities.Dealership;
 import com.zonnee.projetozonne.repositories.DealershipRepository;
 import com.zonnee.projetozonne.services.exception.ServiceException;
@@ -18,9 +19,9 @@ public class DealershipService {
     private DealershipRepository repository;
 
     // FIND ALL
-    public List<DealershipDTO> findAll() {
+    public List<ListDealershipDTO> findAll() {
         List<Dealership> result = repository.findAll();
-        return result.stream().map(x -> new DealershipDTO(x)).collect(Collectors.toList());
+        return result.stream().map(x -> new ListDealershipDTO(x)).collect(Collectors.toList());
     }
 
     // FIND BY ID

@@ -17,7 +17,7 @@ public class Dealership {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "idFederativeUnit", nullable = false)
+    @JoinColumn(name = "idFederativeUnit")
     private FederativeUnit idFederativeUnit;
 
 }
