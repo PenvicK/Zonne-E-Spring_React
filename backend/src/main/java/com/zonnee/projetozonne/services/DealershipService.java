@@ -1,7 +1,7 @@
 package com.zonnee.projetozonne.services;
 
 import com.zonnee.projetozonne.dto.DealershipDTO;
-import com.zonnee.projetozonne.dto.ListDealershipDTO;
+import com.zonnee.projetozonne.dto.listDtosDealership.ListDealershipDTO;
 import com.zonnee.projetozonne.entities.Dealership;
 import com.zonnee.projetozonne.repositories.DealershipRepository;
 import com.zonnee.projetozonne.services.exception.ServiceException;

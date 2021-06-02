@@ -1,6 +1,7 @@
 package com.zonnee.projetozonne.controllers;
 
 import com.zonnee.projetozonne.dto.FederativeUnitDTO;
+import com.zonnee.projetozonne.dto.listDtosFederative.ListUFDTO;
 import com.zonnee.projetozonne.entities.FederativeUnit;
 import com.zonnee.projetozonne.repositories.FederativeUnitRepository;
 import com.zonnee.projetozonne.services.FederativeUnitService;
@@ -24,8 +25,8 @@ public class FederativeUnitController {
     private FederativeUnitRepository repository;
 
     @GetMapping
-    public ResponseEntity<List<FederativeUnitDTO>> findAll(){
-        List<FederativeUnitDTO> list = service.findAll();
+    public ResponseEntity<List<ListUFDTO>> findAll(){
+        List<ListUFDTO> list = service.findAll();
         return ResponseEntity.ok(list);
     }
 

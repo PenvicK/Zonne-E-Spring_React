@@ -1,13 +1,9 @@
 package com.zonnee.projetozonne.controllers;
 
 import com.zonnee.projetozonne.dto.DealershipDTO;
-import com.zonnee.projetozonne.dto.FederativeUnitDTO;
-import com.zonnee.projetozonne.dto.ListDealershipDTO;
+import com.zonnee.projetozonne.dto.listDtosDealership.ListDealershipDTO;
 import com.zonnee.projetozonne.entities.Dealership;
-import com.zonnee.projetozonne.entities.FederativeUnit;
-import com.zonnee.projetozonne.repositories.FederativeUnitRepository;
 import com.zonnee.projetozonne.services.DealershipService;
-import com.zonnee.projetozonne.services.FederativeUnitService;
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

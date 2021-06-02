@@ -1,4 +1,4 @@
-package com.zonnee.projetozonne.dto;
+package com.zonnee.projetozonne.dto.listDtosDealership;
 
 import com.zonnee.projetozonne.entities.FederativeUnit;
 import lombok.AllArgsConstructor;
@@ -19,6 +19,7 @@ public class ListFederativeUnitDTO implements Serializable {
     private Long idFederativeUnit;
     private String name;
     private String prefix;
+
 
     public ListFederativeUnitDTO(FederativeUnit entity) {
         idFederativeUnit = entity.getIdFederativeUnit();

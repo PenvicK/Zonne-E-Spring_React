@@ -1,15 +1,12 @@
-package com.zonnee.projetozonne.dto;
+package com.zonnee.projetozonne.dto.listDtosDealership;
 
 
 import com.zonnee.projetozonne.entities.Dealership;
-import com.zonnee.projetozonne.entities.FederativeUnit;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 @Data
 @AllArgsConstructor

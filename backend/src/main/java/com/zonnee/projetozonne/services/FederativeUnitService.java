@@ -1,6 +1,7 @@
 package com.zonnee.projetozonne.services;
 
 import com.zonnee.projetozonne.dto.FederativeUnitDTO;
+import com.zonnee.projetozonne.dto.listDtosFederative.ListUFDTO;
 import com.zonnee.projetozonne.entities.FederativeUnit;
 import com.zonnee.projetozonne.repositories.FederativeUnitRepository;
 import com.zonnee.projetozonne.services.exception.ServiceException;
@@ -16,9 +17,9 @@ public class FederativeUnitService {
     @Autowired
     private FederativeUnitRepository repository;
 
-    public List<FederativeUnitDTO> findAll() {
+    public List<ListUFDTO> findAll() {
         List<FederativeUnit> result = repository.findAll();
-        return result.stream().map(x -> new FederativeUnitDTO(x)).collect(Collectors.toList());
+        return result.stream().map(x -> new ListUFDTO(x)).collect(Collectors.toList());
     }
 
     public FederativeUnitDTO insertFederativeUnit(FederativeUnitDTO federativeUnitDTO){
@@ -43,6 +44,7 @@ public class FederativeUnitService {
     public void deleteFederativeUnitById(Long id){
         repository.delete(findById(id));
     }
+
     public FederativeUnitDTO editFederativeUnit(Long id, FederativeUnit update){
         FederativeUnitDTO dto = new FederativeUnitDTO();
         FederativeUnit federativeUnit = findById(id);
