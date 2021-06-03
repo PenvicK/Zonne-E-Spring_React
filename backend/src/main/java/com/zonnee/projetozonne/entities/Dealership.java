@@ -1,5 +1,6 @@
 package com.zonnee.projetozonne.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -16,6 +17,7 @@ public class Dealership {
     private Long idDealership;
     private String name;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "idFederativeUnit")
     private FederativeUnit idFederativeUnit;
