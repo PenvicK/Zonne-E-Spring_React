@@ -1,8 +1,7 @@
-package com.zonnee.projetozonne.jwt;
+package com.zonnee.projetozonne.config.jwt;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor

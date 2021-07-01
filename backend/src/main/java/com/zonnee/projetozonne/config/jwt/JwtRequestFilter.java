@@ -1,4 +1,4 @@
-package com.zonnee.projetozonne.jwt;
+package com.zonnee.projetozonne.config.jwt;
 
 import com.zonnee.projetozonne.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.zonnee.projetozonne.jwt;
+package com.zonnee.projetozonne.config.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

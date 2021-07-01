@@ -1,4 +1,4 @@
-package com.zonnee.projetozonne.jwt;
+package com.zonnee.projetozonne.config.jwt;
 
 import lombok.*;
 

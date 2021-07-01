@@ -1,8 +1,8 @@
 package com.zonnee.projetozonne.controllers;
 
-import com.zonnee.projetozonne.jwt.AuthenticationRequest;
-import com.zonnee.projetozonne.jwt.AuthenticationResponse;
-import com.zonnee.projetozonne.jwt.JwtUtil;
+import com.zonnee.projetozonne.config.jwt.AuthenticationRequest;
+import com.zonnee.projetozonne.config.jwt.AuthenticationResponse;
+import com.zonnee.projetozonne.config.jwt.JwtUtil;
 import com.zonnee.projetozonne.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -34,10 +34,12 @@ public class AuthenticationController {
             System.out.println("Entrou na funçao de autentificação, username: " + authenticationRequest.getUsername() + ", password: " + authenticationRequest.getPassword());
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(),
                     authenticationRequest.getPassword()));
+            System.out.println("Teste final try");
         } catch (BadCredentialsException e) {
+            System.out.println("Caiu no Catch");
             throw new Exception("Incorrect username or password", e);
         }
-
+        System.out.println("Saiu do try!");
         final UserDetails user = userService.loadUserByUsername(authenticationRequest.getUsername());
 
         final String jwt = jwtUtil.generateToken(user);
