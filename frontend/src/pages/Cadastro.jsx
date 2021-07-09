@@ -123,7 +123,7 @@ function Cadastro(){
                 <Caixa change={handleChangeConfirmSenha} valor={confirmSenha} funcao="password" texto="Confirmar Senha" size="12" maxlength="15" /> 
                 <Caixa change={handleChangeCep} valor={cep} funcao="text" texto="CEP:" size="2" maxlength="8" />
                 <Caixa change={handleChangeEstado} valor={estado} funcao="text" texto="Estado" size="12" maxlength="40" /> 
-                <Caixa change={handleChangeCidade} valor={cidade} funcao="text" texto="Cidade" size="12" maxlength="40" /> 
+                <Caixa change={handleChangeCidade} valor={cidade} funcao="text" texto="UF" size="12" maxlength="40" /> 
                 <Caixa change={handleChangeRua} valor={rua} funcao="text" texto="Rua" size="12" maxlength="30" /> 
                 <Caixa change={handleChangeNumero} valor={numero} funcao="text" texto="Numero" size="12" maxlength="10" />
                 <Caixa change={handleChangeComplemento} valor={complemento} funcao="text" texto="Complemento" size="12" maxlength="40" /> 
